@@ -4,7 +4,7 @@
   "description": "easyuse dva and react to create boilerplates.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./bin/easyuse"
   },
   "keywords": [
     "dva",
@@ -19,5 +19,11 @@
     "chalk": "^2.3.1",
     "commander": "^2.14.1",
     "node-mkdirs": "0.0.1"
+  },
+  "homepage": "https://github.com/AviyuLeoVulcan/dva-react-easyuse#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AviyuLeoVulcan/dva-react-easyuse.git"
   }
 }
+ 

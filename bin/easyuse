@@ -2,26 +2,21 @@
 
 var program = require('commander');
 var chalk = require('chalk').default;
-var route = require('../lib/router');
-var component = require('../lib/component');
-var model = require('../lib/model');
- 
+var lib = require("../lib") 
 
 program
 .version('0.0.1', '-v, --version')
 
-
 program.command('route <filename>')
 .description('添加一个路由')
-.action(route);
+.action(lib.route);
 
 program.command('component <filename>')
 .description('添加一个组件')
-.action(component); 
+.action(lib.component); 
 
 program.command('model <filename>')
 .description('添加一个dva的model')
-.action(model);
-
+.action(lib.model);
 
 program.parse(process.argv);
