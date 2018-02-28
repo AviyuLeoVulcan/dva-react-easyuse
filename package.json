@@ -4,7 +4,8 @@
   "description": "easyuse dva and react to create boilerplates.",
   "main": "index.js",
   "scripts": {
-    "test": "./bin/easyuse"
+    "test": "./bin/easyuse",
+    "clean": "rm -rf src"
   },
   "keywords": [
     "dva",
