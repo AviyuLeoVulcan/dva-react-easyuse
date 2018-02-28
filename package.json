@@ -1,0 +1,23 @@
+{
+  "name": "dva-react-easyuse",
+  "version": "0.0.1",
+  "description": "easyuse dva and react to create boilerplates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dva",
+    "react"
+  ],
+  "author": "aviyu",
+  "license": "MIT",
+  "bin": {
+    "easyuse": "./bin/easyuse"
+  },
+  "dependencies": {
+    "chalk": "^2.3.1",
+    "commander": "^2.14.1",
+    "node-mkdirs": "0.0.1"
+  }
+}

@@ -1,0 +1,27 @@
+#!/usr/bin/env node 
+
+var program = require('commander');
+var chalk = require('chalk').default;
+var route = require('../lib/router');
+var component = require('../lib/component');
+var model = require('../lib/model');
+ 
+
+program
+.version('0.0.1', '-v, --version')
+
+
+program.command('route <filename>')
+.description('添加一个路由')
+.action(route);
+
+program.command('component <filename>')
+.description('添加一个组件')
+.action(component); 
+
+program.command('model <filename>')
+.description('添加一个dva的model')
+.action(model);
+
+
+program.parse(process.argv);
