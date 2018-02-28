@@ -8,6 +8,7 @@ program
 .version('0.0.1', '-v, --version')
 
 program.command('route <filename>')
+.option("-m, --models [models]","要注册的模块")
 .description('添加一个路由')
 .action(lib.route);
 
