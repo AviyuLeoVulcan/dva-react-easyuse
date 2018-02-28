@@ -4,7 +4,7 @@
 
 # install 
 ```
-npm install dva-react-easyuse
+npm install dva-react-easyuse -g
 ```
 # How to Use
 
@@ -20,5 +20,5 @@ easyuse model app
 
 ## create route
 ```
-easyuse route MyRoute
+easyuse route -m login,app MyRoute
 ```
