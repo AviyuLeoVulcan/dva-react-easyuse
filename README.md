@@ -10,8 +10,15 @@ npm install dva-react-easyuse -g
 
 ## create component
 ```
-easyuse component MyComponent
+$ easyuse component MyComponent 
+<font color='green'>component create success!</font>
+<font color='cyan'>
+/Users/aviyu/Workspace/github/dva-react-easyuse/src/components/MyComponent/index.js
+/Users/aviyu/Workspace/github/dva-react-easyuse/src/components/MyComponent/index.less
+/Users/aviyu/Workspace/github/dva-react-easyuse/src/components/MyComponent/README.md
+</font>
 ```
+
 
 ## create model
 ```
