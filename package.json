@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "./bin/easyuse",
-    "clean": "rm -rf src"
+    "clean": "rm -rf src/components src/models src/routes",
+    "clean:com": "rm -rf src/components",
+    "clean:mod": "rm -rf src/models",
+    "clean:rou": "rm -rf src/routes"
   },
   "keywords": [
     "dva",
