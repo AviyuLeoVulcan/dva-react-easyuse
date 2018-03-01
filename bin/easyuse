@@ -7,16 +7,17 @@ var lib = require("../lib")
 program
 .version('0.0.1', '-v, --version')
 
-program.command('route <filename>')
-.description('添加一个路由')
+program.command('route <route-name>')
+.option("-m, --models [models]","the models that the route will be used，example: easyuse route -m app,login myRoute")
+.description('create new route')
 .action(lib.route);
 
-program.command('component <filename>')
-.description('添加一个组件')
+program.command('component <component-name>')
+.description('create new component')
 .action(lib.component); 
 
-program.command('model <filename>')
-.description('添加一个dva的model')
+program.command('model <model-name>')
+.description('create new model')
 .action(lib.model);
 
 program.parse(process.argv);
