@@ -5,19 +5,36 @@ var chalk = require('chalk').default;
 var lib = require("../lib") 
 
 program
-.version('0.0.1', '-v, --version')
+.version('0.1.3', '-v, --version')
 
 program.command('route <route-name>')
+.alias('r')
 .option("-m, --models [models]","the models that the route will be used，example: easyuse route -m app,login myRoute")
 .description('create new route')
 .action(lib.route);
 
 program.command('component <component-name>')
+.alias('c')
 .description('create new component')
 .action(lib.component); 
 
 program.command('model <model-name>')
+.alias('m')
 .description('create new model')
 .action(lib.model);
 
-program.parse(process.argv);
+program.command('*')
+.action(function(env){
+  console.log(chalk.red('There is no command "%s"'), env);
+  console.log(chalk.yellow('Please use -h or --help to get help'));
+}); 
+ 
+function make_red(txt) {
+  return chalk.greenBright(txt); 
+}
+
+if (!process.argv.slice(2).length) {
+  program.outputHelp(make_red);
+}else{
+  program.parse(process.argv); 
+}
