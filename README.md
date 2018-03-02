@@ -37,3 +37,11 @@ Route:
       component: dynamicWrapper(app, ["app","login"], () => import('../routes/MyRoute')),
     },
 ```
+
+## create layout
+```
+ ./bin/easyuse layout BasicLayout
+layout create success!
+.../src/layouts/BasicLayout.js
+.../src/layouts/BasicLayout.less
+```
