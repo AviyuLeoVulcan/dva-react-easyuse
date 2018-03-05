@@ -23,6 +23,11 @@ program.command('model <model-name>')
 .description('create new model')
 .action(lib.model);
 
+program.command('service <service-name>')
+.alias('s')
+.description('create new service')
+.action(lib.service);
+
 program.command('*')
 .action(function(env){
   console.log(chalk.red('There is no command "%s"'), env);

@@ -37,4 +37,3 @@ Route:
       component: dynamicWrapper(app, ["app","login"], () => import('../routes/MyRoute')),
     },
 ```
-11111
