@@ -1,6 +1,6 @@
 {
   "name": "dva-react-easyuse",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "easyuse dva and react to create boilerplates.",
   "main": "index.js",
   "scripts": {

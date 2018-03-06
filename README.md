@@ -1,3 +1,6 @@
+
+This tool is for [ant-design-pro](https://github.com/ant-design/ant-design-pro).
+
 # install 
 ```
 npm install -g dva-react-easyuse
