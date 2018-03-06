@@ -13,6 +13,13 @@ program.command('route <route-name>')
 .description('create new route')
 .action(lib.route);
 
+program.command('layout <layout-name>')
+.alias('l')
+.option("-r, --route","add the layout route")
+.option("-m, --models [models]","the models that the route will be used，example: easyuse route -m app,login myRoute")
+.description('create new layout')
+.action(lib.layout);
+
 program.command('component <component-name>')
 .alias('c')
 .description('create new component')

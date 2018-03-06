@@ -1,3 +1,6 @@
+
+This tool is for [ant-design-pro](https://github.com/ant-design/ant-design-pro).
+
 # install 
 ```
 npm install -g dva-react-easyuse
@@ -36,4 +39,12 @@ Route:
     '/MyRoute': {
       component: dynamicWrapper(app, ["app","login"], () => import('../routes/MyRoute')),
     },
+```
+
+## create layout
+```
+ ./bin/easyuse layout BasicLayout
+layout create success!
+.../src/layouts/BasicLayout.js
+.../src/layouts/BasicLayout.less
 ```
